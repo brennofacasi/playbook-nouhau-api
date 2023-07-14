@@ -2,7 +2,7 @@
 CREATE TABLE "Game" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "title" TEXT NOT NULL,
-    "maxplayers" INTEGER NOT NULL,
+    "maxPlayers" INTEGER NOT NULL,
     "maxGroups" INTEGER NOT NULL,
     "time" INTEGER NOT NULL,
     "image" TEXT,
