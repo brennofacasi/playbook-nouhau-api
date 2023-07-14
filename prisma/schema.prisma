@@ -10,11 +10,12 @@ datasource db {
 model Game {
   id         Int         @id @default(autoincrement())
   title      String
-  maxplayers Int
+  maxPlayers Int
   maxGroups  Int
   time       Int
   image      String?
   steps      String
+  favorite   Boolean     @default(false)
   assets     GameAsset[]
   skills     GameSkill[]
 }
