@@ -10,6 +10,8 @@
 
 ## Primeiros passos 🚀
 
+### Variáveis de desenvolvimento
+
 Antes de tudo, renomeie o arquivo ```env.example``` para ```.env```. Edite as variáveis caso necessário:
 
 | Variável       | Tipo     | Descrição                   |
@@ -17,23 +19,36 @@ Antes de tudo, renomeie o arquivo ```env.example``` para ```.env```. Edite as va
 | `API_PORT`     | `number` | Porta local da API.         |
 | `DATABASE_URL` | `string` | Endereço do banco de dados. |
 
+### Dependências
 
-Instale as dependências do projeto e rode o servidor de desenvolvimento:
+Instale as dependências do projeto:
 
 ```bash
 $ npm install
-$ npm run dev
 # ou
 $ yarn install
-$ yarn dev
 ```
 
-### Banco de Dados 💿
+### Banco de Dados
 
-O projeto já conta com um arquivo ```.db``` já populado com dados, localizando na pasta ```/prisma```. Caso haja algum erro, ou prefira outro gerenciador de banco de dados, rode as migrations (seeds inclusos!) utilizado o comando:
+Para inicializar a aplicação, é preciso criar o arquivo do SQLite como banco de dados. O projeto conta com *seeds* prontos para popular o banco de maneira fácil. Para isso, basta rodar o comando:
 
 ```bash
 $ npm run prisma migrate dev
 # ou
 $ yarn prisma migrate dev
 ```
+
+### Tudo pronto?
+
+Inicialize o servidor de desenvolvimento:
+
+```bash
+$ npm run dev
+# ou
+$ yarn dev
+```
+
+## Projeto 😎
+
+Além de ter sido criado a partir de uma necessidade real, o Playbook Nouhau é o MVP da segunda sprint da pós-graduação em **Desenvolvimento Full Stack da PUC-Rio**, desenvolvido por Brenno Cavalcante. 🏳️‍🌈
