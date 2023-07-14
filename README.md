@@ -1,73 +1,39 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+ <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-wODOo4FL_047PVLNWhz4d8vQPhXv0jF1hpypPB11vCn3nsDbyzy7UhE9ySodY1tU37C35Qeme6VzNzpknPG5OJD-T5cQ=s2560" width="235" alt="Playbook Nouhau" />
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+ # API | Playbook Nouhau
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+ A Nouhau é uma startup de transformação de culturas organizacionais por meio de metodologias inovadoras. Através de jogos empresariais, a empresa estimula o desenvolvimento de competências socioemocionais (soft skills) com estratégia.
 
-## Description
+ Para fornecer dados para o app [Playbook Nouhau](https://github.com/brennofacasi/playbook-nouhau-app), foi desenvolvida uma API simples, utilizando o [Nest](https://github.com/nestjs/nest) (framework TypeScript), [Prisma](https://www.prisma.io/) (ORM) e banco de dados **SQLite**.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Primeiros passos 🚀
 
-## Installation
+Antes de tudo, renomeie o arquivo ```env.example``` para ```.env```. Edite as variáveis caso necessário:
+
+| Variável       | Tipo     | Descrição                   |
+| :------------- | :------- | :-------------------------- |
+| `API_PORT`     | `number` | Porta local da API.         |
+| `DATABASE_URL` | `string` | Endereço do banco de dados. |
+
+
+Instale as dependências do projeto e rode o servidor de desenvolvimento:
 
 ```bash
+$ npm install
+$ npm run dev
+# ou
 $ yarn install
+$ yarn dev
 ```
 
-## Running the app
+### Banco de Dados 💿
+
+O projeto já conta com um arquivo ```.db``` já populado com dados, localizando na pasta ```/prisma```. Caso haja algum erro, ou prefira outro gerenciador de banco de dados, rode as migrations (seeds inclusos!) utilizado o comando:
 
 ```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+$ npm run prisma migrate dev
+# ou
+$ yarn prisma migrate dev
 ```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
