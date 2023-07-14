@@ -4,7 +4,7 @@
 
  # API | Playbook Nouhau
 
- A Nouhau é uma startup de transformação de culturas organizacionais por meio de metodologias inovadoras. Através de jogos empresariais, a empresa estimula o desenvolvimento de competências socioemocionais (soft skills) com estratégia.
+ A [Nouhau](https://nouhau.pro/) é uma startup de transformação de culturas organizacionais por meio de metodologias inovadoras. Através de jogos empresariais, a empresa estimula o desenvolvimento de competências socioemocionais (soft skills) com estratégia.
 
  Para fornecer dados para o app [Playbook Nouhau](https://github.com/brennofacasi/playbook-nouhau-app), foi desenvolvida uma API simples, utilizando o [Nest](https://github.com/nestjs/nest) (framework TypeScript), [Prisma](https://www.prisma.io/) (ORM) e banco de dados **SQLite**.
 
